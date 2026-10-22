@@ -1,0 +1,11 @@
+<h1 class="text-2xl font-semibold pb-10 text-gray-900">Biografía</h1>
+<p class="text-xl text-justify">Diego Cerroblanco, presentando su proyecto propio que propone música original para el guitarrón, instrumento tradicional de México, interviniendo eléctricamente y con un ensamble híbrido entre instrumentos mundiales y unos tradicionales.</p>
+  <div class="pt-20">
+    <p-galleria [value]="images" [circular]="true" [showItemNavigators]="false" [showThumbnails]="false" [autoPlay]="true">
+      <ng-template #item let-item>
+        <div>
+          <img class="rounded-2xl w-full overflow-hidden" [src]="item.itemImageSrc" />
+        </div>
+      </ng-template>
+    </p-galleria>
+  </div>
